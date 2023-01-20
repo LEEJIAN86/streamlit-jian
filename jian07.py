@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.title('Jian's library')
+
 money = pd.read_csv("money_data7.csv")
 
 option = st.selectbox(
@@ -15,6 +17,8 @@ st.write('You selected:', option)
 money = money[:] [money['A_YEAR']== option2]
 
 fig, ax = plt.subplots(2,2, figsize=(12,8))
+
+
 
 plt.subplot(221)
 plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='red' , marker='o'     ) 
@@ -40,3 +44,4 @@ plt.title('House Price')
 st.pyplot(fig)
 
 st.dataframe(money)
+
