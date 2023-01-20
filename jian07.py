@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.title('Jian library')
+st.title('Jian :orange[library]')
 
 money = pd.read_csv("money_data7.csv")
 
