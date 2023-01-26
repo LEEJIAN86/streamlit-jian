@@ -50,7 +50,7 @@ st.pyplot(fig)
 st.dataframe(money)
 
 with st.form(key ='Form1'):
-    with st.sidebar:
+with st.sidebar:
         
         select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
         
