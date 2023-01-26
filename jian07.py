@@ -49,7 +49,7 @@ def  plotting_demo():
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie', 'hist', 'corr', 'word', 'box' ))
+        select_language = st.sidebar.radio('What do you want graph?', ('line graph', 'bar graph', 'pie graph', 'hist graph', 'corr graph', 'word graph', 'box graph' ))
         
         
 if select_language =='line':        
