@@ -15,7 +15,7 @@ def  plotting_demo():
         'How would you like to choice year ?',
         ('2020', '2021', '2022'))
 
-option2 = int(option)
+
 
 st.write('You selected:', option)
 
