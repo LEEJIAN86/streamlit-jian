@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title('Jian\'s :orange[library] :books:')
+st.title('Jian\'s :orange[library] :books:
+           Ch.1_')
 
 def  plotting_demo():
     uploaded_file = st.file_uploader("Choose a file")
