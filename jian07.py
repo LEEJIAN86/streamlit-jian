@@ -6,7 +6,11 @@ import numpy as np
 st.title('Jian\'s :orange[library] :books:')
 
 def  plotting_demo():
-    money = pd.read_csv("money_data7.csv")
+    uploaded_file = st.file_uploader("Choose a file")
+
+    money=pd.read_csv(uploaded_file)
+    #money = pd.read_csv("money_data7.csv")
+    
     option = st.selectbox(
         'How would you like to choice year ?',
         ('2020', '2021', '2022'))
