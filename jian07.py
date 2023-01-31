@@ -104,4 +104,7 @@ if select_language =='line graph':
 
         
 elif select_language =='bar graph':
-    bar_chart()
+     try:
+          bar_chart()  
+    except:      
+          pass   
