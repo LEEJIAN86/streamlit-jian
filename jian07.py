@@ -103,5 +103,5 @@ if select_language =='line graph':
           pass      
 
         
-elif select_language =='bar':
+elif select_language =='bar graph':
     bar_chart()
