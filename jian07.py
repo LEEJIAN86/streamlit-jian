@@ -79,8 +79,8 @@ def bar_chart():
     
     fig, ax = plt.subplots(figsize=(12,8))
 
-    colors = ['black','dimgray','dimgrey','darkgray','silver','lightgrey', 'black','dimgray','dimgrey','darkgray'] ]
-    plt.bar(  x,  y,  color= 'colors' ) 
+    
+    plt.bar(  x,  y,  color= 'greys' ) 
 
     for   num ,   v    in   enumerate( y ):
         plt.text (  num -0.25  ,   v + 0.01 ,  v   )
