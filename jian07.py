@@ -90,7 +90,7 @@ def bar_chart():
     st.dataframe(df7)
 
 st.set_page_config(layout="centered") 
-st.title('Jian\'s :orange[library] :books: graph')
+st.title('Jian\'s :orange[library] :books: Collection of data')
 
 with st.form(key ='Form1'):
     with st.sidebar:
