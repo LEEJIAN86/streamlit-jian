@@ -94,7 +94,7 @@ st.title('Jian\'s :orange[library] :books: Data Analysis')
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('데이터 분석 결과', ('금리와 집값의 상관관계', '야구 순위와 승률의 상관관계', '다른 데이터 분석'))
+        select_language = st.sidebar.radio('데이터 분석 결과', ('금리와 집값의 상관관계', '야구 순위와 승률의 상관관계', 'else data'))
         
         
 if select_language =='금리와 집값의 상관관계':  
