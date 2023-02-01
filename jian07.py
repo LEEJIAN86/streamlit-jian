@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title('Jian\'s :orange[library] :books: graph')
 
 def  plotting_demo():
     
@@ -11,7 +10,7 @@ def  plotting_demo():
 
     #money=pd.read_csv(uploaded_file)
     money = pd.read_csv("money_data7.csv")
-    
+
     option = st.selectbox(
         'How would you like to choice year ?',
         ('2020', '2021', '2022'))
@@ -47,12 +46,13 @@ def  plotting_demo():
 
     st.pyplot(fig)
     st.dataframe(money)
-    
+       
+
 def bar_chart():
 
     url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
 
-    years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022' ]
+    years = ['2015', '2016','2017', '2018', '2019', '2020', '2021', '2022' ]
 
     df = pd.DataFrame([]) 
 
@@ -87,8 +87,8 @@ def bar_chart():
 
     plt.title( "year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
-    st.dataframe(df7)  
-    
+    st.dataframe(df7)
+
 st.set_page_config(layout="centered")        
 
 with st.form(key ='Form1'):
