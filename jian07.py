@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
+import  seaborn   as  sns 
 
 def  plotting_demo():
     
@@ -79,8 +79,8 @@ def bar_chart():
     
     fig, ax = plt.subplots(figsize=(12,8))
 
-    #colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
-    plt.bar(  x,  y,  color= 'gry' ) 
+    colors = ['black','dimgray','dimgrey','darkgray','silver','lightgrey', 'black','dimgray','dimgrey','darkgray'] ]
+    plt.bar(  x,  y,  color= 'colors' ) 
 
     for   num ,   v    in   enumerate( y ):
         plt.text (  num -0.25  ,   v + 0.01 ,  v   )
