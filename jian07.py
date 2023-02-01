@@ -83,7 +83,7 @@ def bar_chart():
     plt.bar(  x,  y,  color= colors ) 
 
     for   num ,   v    in   enumerate( y ):
-        plt.text (  num -0.3  ,   v + 0.01 ,  v   )
+        plt.text (  num -0.35  ,   v + 0.01 ,  v   )
 
     plt.title( "year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
