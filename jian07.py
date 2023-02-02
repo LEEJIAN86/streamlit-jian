@@ -75,12 +75,17 @@ def bar_chart():
         ('2015', '2016','2017', '2018', '2019', '2020', '2021', '2022'))
 
     option2 = option
+    
 
     st.write('You selected:', option)
 
     df7  =  baseball[:] [ baseball.년도==option2 ]
     x = df7.팀
     y = df7.승률
+    
+    global  bb
+    
+    bb = baseball
     
     fig, ax = plt.subplots(figsize=(12,8))
 
@@ -92,7 +97,7 @@ def bar_chart():
 
     plt.title( "year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
-    st.dataframe(df7)
+    #st.dataframe(df7)
 
 st.set_page_config(layout="centered") 
 st.title('Jian\'s :orange[library] :books: Data Analysis')
@@ -117,4 +122,12 @@ if select_language =='interest rates and house prices Corr':
 
         
 elif select_language =='Baseball Rankings and Winning Rates Corr':
-    bar_chart()
+    tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+   
+    with tab1:
+        tab1.subheader("A tab with a chart")
+        bar_chart()
+        
+    with tab2:
+        tab2.subheader("A tab with the data")
+        st.dataframe(bb)
